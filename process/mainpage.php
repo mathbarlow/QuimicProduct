@@ -74,7 +74,7 @@ if (isset($username) and isset($session)){
               <ul class="sidebar-menu" id="nav-accordion">
               
                   <p class="centered"><a href="profile.html"><img src="../img/profile.png" class="img-circle" width="60"></a></p>
-                  <h5 class="centered">ADMINISTRADOR</h5>
+                  <h5 class="centered">ADMINISTRADOR DE PUTA MADRE!!</h5>
                     
                   <li class="mt">
                       <a href="index.html">
