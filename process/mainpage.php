@@ -74,7 +74,7 @@ if (isset($username) and isset($session)){
               <ul class="sidebar-menu" id="nav-accordion">
               
                   <p class="centered"><a href="profile.html"><img src="../img/profile.png" class="img-circle" width="60"></a></p>
-                  <h5 class="centered">ADMINISTRADOR DE PUTA MADRE!!</h5>
+                  <h5 class="centered">ADMINISTRADOR</h5>
                     
                   <li class="mt">
                       <a href="index.html">
@@ -106,13 +106,13 @@ if (isset($username) and isset($session)){
                                     
                                 case 3: 
                                     echo ("<li class='sub-menu'><a href='' class='' id='usermenu'><i class='fa fa-users'></i><span>Usuarios</span></a>");
-                                    echo ("<ul class='sub'><li><a href='../users/create.php' class='' id='usermenu1'><i class='fa fa-plus fa-fw'></i>Adicionar</a></li>");
-                                    echo ("<li><a href='buttons.html'><i class='fa fa-search'></i>Buscar</a></li>");
+                                    echo ("<ul class='sub'><li><a href='../users/create.php'><i class='fa fa-plus fa-fw'></i>Adicionar</a></li>");
+                                    echo ("<li><a href='../users/search.php'><i class='fa fa-search'></i>Buscar</a></li>");
                                     echo ("<li><a href='panels.html'><i class='fa fa-cogs' ></i>Administrar</a></li></ul></li>");
                      
                                     echo ('<li class="sub-menu"><a href="" class="" id="productsmenu"><i class="glyphicon glyphicon-list-alt"></i><span>Productos</span></a>');
                                     echo ('<ul class="sub"><li><a href="../products/create.php"><i class="fa fa-plus-circle fa-fw"></i>Adicionar</a></li>');
-                                    echo ('<li><a href="buttons.html"><i class="fa fa-search" ></i>Buscar</a></li>');
+                                    echo ('<li><a href="../products/search.php"><i class="fa fa-search" ></i>Buscar</a></li>');
                                     echo ('<li><a href="panels.html"><i class="fa fa-cogs" ></i>Administrar</a></li></ul></li>');break;
                                     
                                 }
