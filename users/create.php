@@ -1,20 +1,98 @@
 <?php
-
-include("../process/mainpage.php");
-
+  include("../process/mainpage.php");
 ?>
+    
+        <!-- libraries -->
+    <link href="../css/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" />
+    <link href="../css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link href="../css/uniform.default.css" type="text/css" rel="stylesheet" />
+    <link href="../css/select2.css" type="text/css" rel="stylesheet" />
+    <link href="../css/bootstrap.datepicker.css" type="text/css" rel="stylesheet" />
+    <link href="../css/jquery.dataTables.css" type="text/css" rel="stylesheet" />
 
-     <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="../css/icons.css" />
+
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/form-showcase.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/datatables.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/pb.css" type="text/css"/>
+
+    <script src="../js/wysihtml5-0.3.0.js"></script>
+    <script src="../js/bootstrap.datepicker.js"></script>
+    <script src="../js/jquery.uniform.min.js"></script>
+    <script src="../js/select2.min.js"></script>
+    <script src="../js/jquery-ui-1.10.2.custom.min.js"></script>  
+    <script src="../js/theme.js"></script>
+    <script src="../js/jquery.dataTables.js"></script>
+    <script src="../js/personal.js"></script>
+
+
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper site-min-height">
             <h3><i class="fa fa-angle-right"></i> Pagina DE CREAR USUARIOS</h3>
             <div class="row mt">
-                <div class="col-lg-12">
-                <p>Esto es una prueba usuarios</p>
+                <!-- main container -->
+    <div class="content">
+
+        <!-- end upper main stats -->
+
+        <div id="pad-wrapper" class="form-page">
+
+            <!-- statistics chart built with jQuery Flot -->
+            <div class="row form-wrapper">
+                <!-- left column -->
+                <div id="miPagina" class="col-md-5 column">
+
+                    <form method="POST">
+    
+                        <div class="field-box">
+                            <label>Nombre:</label>
+                            <div class="col-md-7">
+                                <input name="nombre" id="nombre" class="form-control" required autofocus type="text">
+                            </div>                            
+                        </div>
+                        <div class="field-box">
+                            <label>Clave:</label>
+                            <div class="col-md-7">
+                                <input name="clave" id="clave" class="form-control" required type="text">
+                            </div>                            
+                        </div>
+                        <div class="field-box">
+                            <label>Perfil:</label>
+                            <div class="col-md-7">
+                                <input name="Perfil" id="Perfil" class="form-control" required type="text">
+                            </div>                            
+                        </div>
+                        
+
+                        <div class="action">
+                            <input type="submit"  class="btn-flat" id="registrar" value="Registrar" ></input>
+                            <input type="button" onclick="listarClientes();"  class="btn-flat" id="mostrar" value="Mostrar" ></input>
+                        </div> 
+                        
+                    </form>
+
+                    <div id="mensaje" class="col-md-6">
+                        
+                    </div>
+
                 </div>
+
+                <!-- right column -->
+                <div id="miTabla" class="col-md-7 column pull-right">
+                    <div id="cargando"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
             </div>
             
         </section><!--/wrapper -->
@@ -22,13 +100,17 @@ include("../process/mainpage.php");
 
 
 
-            <!--common script for all pages-->
+            <!--common script for all pages-->            
             <script>
               $(document).ready(function(){
                   $("#usermenu").toggleClass('active');                  
               });
             </script>  
-  
+                <!-- scripts -->
+ 
+            <script type="text/javascript">
+                registrarCliente();
+            </script>
              
 
       <!--main content end-->
@@ -36,7 +118,7 @@ include("../process/mainpage.php");
       <footer class="site-footer">
           <div class="text-center">
               2016 - JAC
-              <a href="mainpage.php#" class="go-top">
+              <a href="create.php#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
