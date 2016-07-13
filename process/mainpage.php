@@ -56,7 +56,7 @@ if (isset($username) and isset($session)){
 
             <div class="top-menu">
                 <ul class="nav pull-right  pull-right top-menu">
-                    <li><a class="logout" href="login.html">Salir</a></li>
+                    <li><a class="logout" href="../logout.php">Salir</a></li>
                 </ul>
 
             </div>
@@ -75,7 +75,7 @@ if (isset($username) and isset($session)){
               <ul class="sidebar-menu" id="nav-accordion">
               
                   <p class="centered"><a href="profile.html"><img src="../img/profile.png" class="img-circle" width="60"></a></p>
-                  <h5 class="centered">ADMINISTRADOR</h5>
+                  <h5 class="centered"><?= strtoupper($username); ?></h5>
                     
                   <li class="mt">
                       <a href="index.html">
@@ -101,18 +101,18 @@ if (isset($username) and isset($session)){
                                 case 2:
                                     
                                     echo ('<li class="sub-menu active"><a href="javascript:;" ><i class="glyphicon glyphicon-list-alt"></i><span>Productos</span></a>');
-                                    echo ('<ul class="sub"><li><a href="../products/create.php" ><i class="fa fa-plus-circle fa-fw"></i>Adicionar</a></li>');
+                                    echo ('<ul class="sub"><li><a href="../products/form_create.php" ><i class="fa fa-plus-circle fa-fw"></i>Adicionar</a></li>');
                                     echo ('<li><a href="buttons.html"><i class="fa fa-search" ></i>Buscar</a></li>');
                                     echo ('<li><a href="panels.html"><i class="fa fa-cogs" ></i>Administrar</a></li></ul></li>');break;
                                     
                                 case 3: 
                                     echo ("<li class='sub-menu'><a href='' class='' id='usermenu'><i class='fa fa-users'></i><span>Usuarios</span></a>");
-                                    echo ("<ul class='sub'><li><a href='../users/create.php'><i class='fa fa-plus fa-fw'></i>Adicionar</a></li>");
+                                    echo ("<ul class='sub'><li><a href='../users/form_create.php'><i class='fa fa-plus fa-fw'></i>Adicionar</a></li>");
                                     echo ("<li><a href='../users/search.php'><i class='fa fa-search'></i>Buscar</a></li>");
                                     echo ("<li><a href='panels.html'><i class='fa fa-cogs' ></i>Administrar</a></li></ul></li>");
                      
                                     echo ('<li class="sub-menu"><a href="" class="" id="productsmenu"><i class="glyphicon glyphicon-list-alt"></i><span>Productos</span></a>');
-                                    echo ('<ul class="sub"><li><a href="../products/create.php"><i class="fa fa-plus-circle fa-fw"></i>Adicionar</a></li>');
+                                    echo ('<ul class="sub"><li><a href="../products/form_create.php"><i class="fa fa-plus-circle fa-fw"></i>Adicionar</a></li>');
                                     echo ('<li><a href="../products/search.php"><i class="fa fa-search" ></i>Buscar</a></li>');
                                     echo ('<li><a href="panels.html"><i class="fa fa-cogs" ></i>Administrar</a></li></ul></li>');break;
                                     
@@ -122,7 +122,7 @@ if (isset($username) and isset($session)){
                     
                 ?>       
                
-                <li><a href="panels.html"><i class="fa fa-sign-out" ></i>SALIR</a></li>
+                <li><a href="../logout.php"><i class="fa fa-sign-out" ></i>SALIR</a></li>
 
                       
                       
@@ -137,7 +137,7 @@ if (isset($username) and isset($session)){
 
       
   <!--common script for all pages-->
-            <script src="../js/common-scripts.js"></script>
+            <script src="../js/common-scripts.js"></script> 
 
 
 

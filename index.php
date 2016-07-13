@@ -9,7 +9,7 @@
 
     <link href="css/bootstrap.css" rel="stylesheet"> 
     <link href="css/login.css" rel="stylesheet">
-    <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>    
+    <script src="js/jquery.js" type="text/javascript"></script>    
 
     <script language= javascript type= text/javascript >
           function showalert(message,alerttype) {

@@ -77,7 +77,7 @@
                         
                     </form>
 
-                    <div id="mensaje" class="col-lg-12">
+                    <div id="mensaje" class="col-md-6">
                         
                     </div>
 
@@ -118,7 +118,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2016 - JAC
-              <a href="form_create.php#" class="go-top">
+              <a href="create.php#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
