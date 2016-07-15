@@ -11,7 +11,9 @@
 
 	$sql = "SELECT username FROM users where username = '$nombre';";
 	$result = mysql_query($sql);
-	if ( !$result ) {	
+	$rows = mysql_num_rows($result);
+
+	if ( $rows <= 0 ) {	
 		$sql = "INSERT INTO users (username, password, profile,status) 
 					VALUES ('$nombre', '$clave', '$perfil', 1);";
 		$res = mysql_query($sql);

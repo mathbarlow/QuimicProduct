@@ -1,3 +1,14 @@
+$(function () {
+  $( "#dialog1" ).dialog({
+    autoOpen: false
+  });
+  
+  $("#opener").click(function() {
+    $("#dialog1").dialog('open');
+    $("#nombre").focus();
+  });
+})
+
 function registrarCliente(){
 
 	$("form").on('submit', function(e) {
@@ -10,25 +21,34 @@ function registrarCliente(){
 			  type: "POST",
 			  url: "../users/add.php",
 			  data: { nombre: nombre, clave: clave, perfil: perfil},
-
+			  beforeSend: function(){
+					//console.log(nombre+" clave> "+clave+" perfil> "+perfil);
+				},
 			  success: function(msg){
 			  	console.log(msg);
 			  	if(msg == "correcto"){
-			  		$("#mensaje").html("<br><div align='center' class='alert alert-success'><i class='icon-ok-sign'></i> Usuario registrado</div>");
+			  		$("#mensaje").html("<br><div align='center' class='alert alert-success'><i class='glyphicon glyphicon-ok'> </i> Usuario registrado</div>");
 			  		listarClientes();
+			  		$("#nombre").val("");
+					$("#clave").val("");
+					$("#perfil").val("");
+					$("#nombre").focus();
+			  		$("#mensaje").fadeIn( "slow", "linear");
 			  	}
 			  	else{
-			  		$("#mensaje").html("<br><div align='center' class='alert alert-danger col-lg-12' ><i class='icon-remove-sign'></i>"+msg+" </div>");
-			  		listarClientes();
+			  		//$("#dialog").html('<a id="page-help" href="page.html" onclick="window.open(this.href, "popupwindow", "width=500,height=300"); return false;">what is this?</a>');
+			  		//$("#dialog").load("Hola").dialog({modal:true}).dialog('open');
+			  		$("#dialog1").dialog('open');
+			  		
+			  		//listarClientes();
 			  	}
 
 			  }		  
 		}).done(function() {
-			$("#nombre").val("");
-			$("#clave").val("");
-			$("#perfil").val("");
+			
 			$("#mensaje").fadeOut( 10000, "linear");
-		  });
+			
+					  });
 	});
 }
 

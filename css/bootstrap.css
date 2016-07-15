@@ -5352,10 +5352,10 @@ a.list-group-item-danger.active:focus {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
+  color: #FFFFFF;
+  text-shadow: 0 0px 0 #FFFFFF;
   filter: alpha(opacity=20);
-  opacity: .2;
+  opacity: 1;
 }
 .close:hover,
 .close:focus {
@@ -5440,11 +5440,12 @@ button.close {
 }
 .modal-header {
   min-height: 16.42857143px;
-  padding: 15px;
+  padding: 6px;
   border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
-  margin-top: -2px;
+  margin-top: 0px;
+  margin-right: 9px;
 }
 .modal-title {
   margin: 0;

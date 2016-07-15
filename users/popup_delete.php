@@ -10,7 +10,7 @@ echo "<div class='modal-dialog'>
     <div class='modal-content'>
       <div class='modal-header'>
         <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
-        <h4 class='modal-title' id='myModalLabel' align='center'>Eliminar Cliente</h4>
+        <h4 class='modal-title' id='myModalLabel' align='center'>Eliminar Usuario</h4>
       </div>
       <div class='modal-body'>
         <form class='form-horizontal well' data-async data-target='#rating-modal' method='POST'>

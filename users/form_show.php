@@ -10,7 +10,7 @@
 	$ide = "";
 	echo "<div id='pad-wrapper' class='datatables-page' style='margin-top:0px;'>";            
 	echo "           <div class='row'>";
-	echo "               <div class='col-md-8'>";
+	echo "               <div class='col-md-10'>";
 	echo "                    <table id='example' class='table table-hover'>";
 	echo "                        <thead>";
 	echo "                            <tr>";
@@ -18,7 +18,7 @@
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'>Nombre</th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'>Clave</th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'>Perfil</th>";
-	echo "                                <th tabindex='0' rowspan='1' colspan='1'></th>";
+	echo "                                <th tabindex='0' rowspan='1' colspan='1' class=''></th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'></th>";
 	echo "                            </tr>";
 	echo "                        </thead>";
@@ -29,8 +29,8 @@
 	echo "                                <td>".$clientes[1]."</td>";
 	echo "                                <td>".$clientes[2]."</td>";
 	echo "                                <td class='center'>$clientes[3]</td>";
-	echo "                                <td class='center'><a onclick='LDE(".$ide=$clientes[0].");' data-toggle='modal' data-target='#myModal-Edit' style='cursor:pointer;'><i class='icon-edit'></i></a></td>";
-	echo "                                <td class='center'><a onclick='ME(".$ide=$clientes[0].");' data-toggle='modal' data-target='#myModal-Delete' style='cursor:pointer;'><i class='icon-remove'></i></a></td>";
+	echo "                                <td class='center'><a onclick='LDE(".$ide=$clientes[0].");' data-toggle='modal' data-target='#myModal-Edit' style='cursor:pointer;'><i class='glyphicon glyphicon-pencil'></i></a></td>";
+	echo "                                <td class='center'><a onclick='ME(".$ide=$clientes[0].");' data-toggle='modal' data-target='#myModal-Delete' style='cursor:pointer;'><i class='glyphicon glyphicon-remove'></i></a></td>";
 	echo "                            </tr>";
 			}
 	echo "                        </tbody>";

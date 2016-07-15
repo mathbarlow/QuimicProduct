@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/form-showcase.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="../css/datatables.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="../css/pb.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
 
     <script src="../js/wysihtml5-0.3.0.js"></script>
     <script src="../js/bootstrap.datepicker.js"></script>
@@ -29,12 +30,17 @@
     <script src="../js/theme.js"></script>
     <script src="../js/jquery.dataTables.js"></script>
     <script src="../js/personal.js"></script>
-
+    <script src="../js/jquery-ui.min.js"></script>
+    
 
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper site-min-height">
-            <h3><i class="fa fa-angle-right"></i> Pagina DE CREAR USUARIOS</h3>
+            <h3><i class="fa fa-angle-right"></i> ADMINISTRACION DE USUARIOS</h3>
+            <div class="col-lg-12">
+                <p>Aqui podra administrar las cuentas de los usuarios del sistema</p>
+                </div>
+            <div id="dialog1" title="Error Agregar Usuario" hidden="hidden">Usuario ya existe, por favor cambiar el Nombre</div>    
             <div class="row mt">
                 <!-- main container -->
     <div class="content">
@@ -118,7 +124,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2016 - JAC
-              <a href="create.php#" class="go-top">
+              <a href="form_create.php#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
