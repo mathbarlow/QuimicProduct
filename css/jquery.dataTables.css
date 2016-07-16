@@ -8,6 +8,7 @@ table.dataTable {
 	clear: both;
 	width: 100%;
 	margin-bottom: 35px;
+	margin-left: 15px;
 }
 
 table.dataTable thead th {
@@ -50,6 +51,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
  */
 .dataTables_wrapper {
 	position: relative;
+	margin-top: 10px;
 	clear: both;
 	*zoom: 1;
 }
@@ -59,7 +61,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
  * Page length menu
  */
 .dataTables_length {
-	float: left;
+	float: right;
 	margin-bottom: 10px;
 }
 .dataTables_length label {
@@ -74,14 +76,15 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
  * Filter
  */
 .dataTables_filter {
-	float: right;
-	text-align: right;
+	float: left;
+	padding-left: 15px;
+	text-align: center;
 }
 .dataTables_filter label {
 	font-weight: 600;
 }
 .dataTables_filter input[type="text"] {
-	margin-left: 7px;
+	margin-left: 15px;
 	border: 1px solid #cccccc;
 	border-radius: 3px;
 	height: 25px;
@@ -97,6 +100,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	text-align:center;
 	margin:auto;
     padding-bottom: 10px;
+    padding-top: 10px;
 
 }
 

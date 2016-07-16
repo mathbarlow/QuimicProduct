@@ -36,62 +36,31 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper site-min-height">
-            <h3><i class="fa fa-angle-right"></i> ADMINISTRACION DE USUARIOS</h3>
+            <h3><i class="fa fa-angle-right"></i> BUSQUEDA DE USUARIOS</h3>
             <div class="col-lg-12">
-                <p>Aqui podra administrar las cuentas de los usuarios del sistema</p>
+                <p>Aqui podra ver la lista de usuarios del sistema</p>
                 </div>
-            <div id="dialog1" title="Error Agregar Usuario" hidden="hidden">Usuario ya existe, por favor cambiar el Nombre</div>    
+                        <div hidden="hidden">                            
+                            <input type="button" onclick="BuscarClientes();"  class="btn-flat" id="mostrar" value="Mostrar" style="display: none;"></input>
+                        </div> 
             <div class="row mt">
                 <!-- main container -->
     <div class="content">
 
         <!-- end upper main stats -->
 
-        <div id="pad-wrapper" class="form-page">
+        <div id="" class="form-page">
 
             <!-- statistics chart built with jQuery Flot -->
             <div class="row form-wrapper">
                 <!-- left column -->
-                <div id="miPagina" class="col-md-5 column pull-left">
 
-                    <form method="POST">
-    
-                        <div class="field-box">
-                            <label>Nombre:</label>
-                            <div class="col-lg-3">
-                                <input name="nombre" id="nombre" class="form-control" required autofocus type="text">
-                            </div>                            
-                        </div>
-                        <div class="field-box">
-                            <label>Clave:</label>
-                            <div class="col-md-7">
-                                <input name="clave" id="clave" class="form-control" required type="text">
-                            </div>                            
-                        </div>
-                        <div class="field-box">
-                            <label>Perfil:</label>
-                            <div class="col-md-7">
-                                <input name="perfil" id="perfil" class="form-control" required type="text">
-                            </div>                            
-                        </div>
-                        
-
-                        <div class="action">
-                            <input type="submit"  class="btn-flat" id="registrar" value="Registrar" ></input>
-                            <input type="button" onclick="listarClientes();"  class="btn-flat" id="mostrar" value="Mostrar" ></input>
-                        </div> 
-                        
-                    </form>
-
-                    <div id="mensaje" class="col-md-6">
-                        
-                    </div>
-
-                </div>
 
                 <!-- right column -->
-                <div id="miTabla" class="col-md-7 column pull-right">
+                <div id="miTabla" class="col-md-7" style="padding-left:35px;padding-top:20px">
                     <div id="cargando"></div>
+                </div>
+                <div id="perrus" class="col-md-4" style="padding-top: 20px;">
                 </div>
             </div>
         </div>
@@ -109,14 +78,12 @@
             <!--common script for all pages-->            
             <script>
               $(document).ready(function(){
-                  $("#usermenu").toggleClass('active');                  
+                  //$("#usermenu").toggleClass('active');   
+                  $('#mostrar').trigger('click');            
               });
             </script>  
                 <!-- scripts -->
             <script src="../js/personal.js"></script>
-            <script type="text/javascript">
-                registrarCliente();
-            </script>
              
 
       <!--main content end-->

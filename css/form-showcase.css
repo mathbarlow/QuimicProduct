@@ -8,12 +8,12 @@
   width: 100%;
 }
 .form-page .form-wrapper label {
-  display: inline-block;
+  display: table-row-group;
   float: left;
   font-weight: 600;
   cursor: auto;
   font-size: 12px;
-  width: 140px;
+  width: inherit;
   text-align: left;
 }
 .form-page .form-wrapper input:-moz-placeholder {

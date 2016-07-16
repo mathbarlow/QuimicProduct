@@ -55,7 +55,7 @@ function registrarCliente(){
 function listarClientes(){
 	 
 	$.ajax({			
-		url: '../users/form_show.php',
+		url: '../users/form_admin.php',
 		type: 'GET',
 		beforeSend: function(){
 			$("#miTabla").html("");
@@ -68,6 +68,22 @@ function listarClientes(){
            $("#miTabla").hide();
            $("#miTabla").fadeToggle(2000,'swing');
            $("#miTabla").addClass("linea");
+		}
+	});
+}
+
+function BuscarClientes(){
+	 
+	$.ajax({			
+		url: '../users/form_search.php',
+		type: 'GET',
+		beforeSend: function(){
+
+		},
+		success: function(data){
+           $("#miTabla").html(data);
+           $("#miTabla").hide();
+           $("#miTabla").fadeToggle(50,'swing');
 		}
 	});
 }
@@ -92,6 +108,20 @@ function ME(id){//Mensaje Eliminar
 		success: function(data){
            $("#myModal-Delete").html(data);
            console.log("");  
+		}
+	});
+}
+
+function MU(id){//Mostrar perfil usuario	
+	$.ajax({
+		type: 'POST',
+		url: '../users/form_user.php',
+		data: {id:id},//parametros
+		success: function(data){           
+           console.log(data); 
+           $("#perrus").html(data);
+           //$("#sitripio").hide();
+           //$("#sitripio").fadeToggle(50,'swing'); 
 		}
 	});
 }
