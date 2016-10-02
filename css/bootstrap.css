@@ -915,7 +915,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #ddd;
   text-decoration: underline;
 }
 a:focus {
@@ -2074,7 +2074,7 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
+  padding: 3px;
   line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #ddd;
@@ -2124,10 +2124,14 @@ th {
 .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9;
 }
+
+/* SELECCION ENCIMA O OVER TABLA */
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #f5f5f5;
-  padding-left: 15px;
+  background-color: #424A5D;
+  /* padding-left: 15px; */
+  color: #FFFFFF;
+  font-weight: bold;
 }
 table col[class*="col-"] {
   position: static;
@@ -2353,7 +2357,7 @@ output {
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 400px;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;

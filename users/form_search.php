@@ -10,7 +10,7 @@
 	$ide = "";
 	echo "<div id='' class='datatables-page' style='margin-top:0px;'>";            
 	echo "           <div class='row'>";
-	echo "               <div class='col-md-10'>";
+	echo "               <div class='col-md-11'>";
 	echo "                    <table id='example' class='table table-hover'>";
 	echo "                        <thead>";
 	echo "                            <tr>";
@@ -25,7 +25,7 @@
 			while ($clientes = mysql_fetch_array($res)) {
 	echo "                            <tr>";
 	echo "                                <td style = 'display:none;'>$clientes[0]</td>";
-	echo "                                <td>".$clientes[1]."</td>";
+	echo "                                <td width='100%'>".$clientes[1]."</td>";
 	echo "                                <td>".$clientes[2]."</td>";
 	echo "                                <td class='center'>$clientes[3]</td>";
 	echo "                                <td class='center'><a onclick='MU(".$ide=$clientes[0].");' style='cursor:pointer;'><i class='glyphicon glyphicon-eye-open'></i></a></td>";
