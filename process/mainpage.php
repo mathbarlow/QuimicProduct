@@ -97,8 +97,8 @@ if (isset($username) and isset($session)){
                         
                            switch ($rowx['profile']){
                                 case 1:
-                                     echo ('<li><a href="products.php"><span class="glyphicon glyphicon-home"></span>LA QUE TE PARIO!!</a></li>');
-                                    echo ('<li><a href="products.php"><span class="glyphicon glyphicon-home"></span>HUEPUTAS!</a></li>');break;                    
+                                     echo ('<li><a href="products.php"><span class="glyphicon glyphicon-home"></span>PERFIL 1 MENU 1</a></li>');
+                                    echo ('<li><a href="products.php"><span class="glyphicon glyphicon-home"></span>PERFIL 1 MENU 2!</a></li>');break;                    
                                 case 2:
                                     
                                     echo ('<li class="sub-menu active"><a href="javascript:;" ><i class="glyphicon glyphicon-list-alt"></i><span>Productos</span></a>');

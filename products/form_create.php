@@ -38,7 +38,7 @@
           <section class="wrapper site-min-height">
             <h3><i class="fa fa-angle-right"></i> ADMINISTRACION DE PRODUCTOS</h3>
             <div class="col-lg-12">
-                <p>Aqui podra administrar el inventario de los productos del sistema</p>
+                <p>En este modulo podra administrar el inventario de los productos del sistema</p>
                 </div>
             <div id="dialog1" title="Error Agregar Producto" hidden="hidden">Producto ya existe, por favor cambiar el Nombre</div>    
             <div class="row mt">
@@ -109,7 +109,7 @@
             <!--common script for all pages-->            
             <script>
               $(document).ready(function(){
-                  $("#usermenu").toggleClass('active');                  
+                  $("#productsmenu").toggleClass('active');                  
               });
             </script>  
                 <!-- scripts -->

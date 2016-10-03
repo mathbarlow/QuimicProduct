@@ -31,6 +31,7 @@
 	echo "                                <td width'10' class='center'><a onclick='MUproducts(".$ide=$clientes[0].");' style='cursor:pointer;'><i class='glyphicon glyphicon-eye-open'></i></a></td>";
 	echo "                            </tr>";
 			}
+	
 	echo "                        </tbody>";
 	echo "                    </table>";
 	echo "                </div>";
@@ -42,6 +43,9 @@
 
 	echo " <script type='text/javascript'>
 			$(document).ready(function() {
+				$(document).ready(function(){
+            		$('#productsmenu').toggleClass('active');                  
+    			});
 				$('#example').dataTable({
 					'sPaginationType': 'full_numbers',
 					'oLanguage':{

@@ -138,7 +138,7 @@ file_put_contents("preview.html", $dbResult );
 
 $htmlresult = file_get_contents("preview.html");
 
-echo "HOLA MI PERROS EL PRODUCTO QUE ESCOGIO> {$name}<br>";
+echo "EL PRODUCTO QUE ESCOGIO> {$name}<br>";
 
 echo "<a class='buttonref' href=\"preview.pdf\" onclick=\"window.open(this.href, 'mywin',
 'left=-20,top=-20,width='+(screen.width -13)+',height='+(screen.availHeight - 65)+',toolbar=0,resizable=0'); return false;\" >Abrir en ventana</a>";
@@ -157,6 +157,11 @@ echo "<br><br><embed src='preview.pdf' type='application/pdf' width='97%' height
 </form>
 
 <script type="text/javascript">
+
+    $(document).ready(function(){
+            $("#productsmenu").toggleClass('active');                  
+    });
+            
 
  $('#boton').click(function() {
 
